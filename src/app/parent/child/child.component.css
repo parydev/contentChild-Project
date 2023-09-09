@@ -1,0 +1,20 @@
+.content-box{
+    box-shadow: 24px 39px 35px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 24px 39px 35px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 24px 39px 35px 0px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    margin: 100px auto;
+    padding: 10px 20px;
+    color: white;
+    background-color: #282828;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+.content-btn{
+    width: 300px;
+    height: 40px;
+
+}
