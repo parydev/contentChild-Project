@@ -2,9 +2,19 @@
     <app-child>
         <h3>Title 1</h3>
         <p #para>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo autem expedita quas nulla alias rerum qui consectetur! Dolores ad odio repellat harum error aut inventore maxime doloremque sed expedita. Perspiciatis.
+            paragraph 2
         </p>
-        <app-test></app-test>
+        <p #para>
+            paragraph 1
+        </p>
+        
+        <p #para>
+            paragraph 3
+        </p>
+        <app-test [name]="'Parisa '"></app-test>
+        <app-test [name]="'Mark '"></app-test>
+        <app-test [name]="'John '"></app-test>
+        <app-test [name]="'Mary '"></app-test>
     </app-child>
     
 </div>

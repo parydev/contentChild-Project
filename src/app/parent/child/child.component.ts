@@ -1,4 +1,4 @@
-import { Component, ContentChild, ElementRef } from '@angular/core';
+import { Component, ContentChild, ContentChildren, ElementRef, QueryList } from '@angular/core';
 import { TestComponent } from '../test/test.component';
 
 @Component({
@@ -9,9 +9,11 @@ import { TestComponent } from '../test/test.component';
 export class ChildComponent {
 
  @ContentChild('para') paraElM :ElementRef;
-  @ContentChild(TestComponent) testEl : TestComponent
+ @ContentChildren('para') paraElements : QueryList<ElementRef>;
+ @ContentChildren(TestComponent) testElements : QueryList<TestComponent>;
+  
 
  onTest(){
-  console.log(this.paraElM)
+  this.testElements.forEach((el) => console.log(el))
  }
 }
